@@ -1,0 +1,19 @@
+/* App.css */
+
+.user-cell {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between items */
+  padding: 16px; /* Add padding for spacing */
+  border-bottom: 1px solid #ddd; /* Add a border between rows */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-button {
+  margin-left: 10px; /* Adjust this value for spacing */
+  align-self: flex-end; /* Align button to the right side */
+}
