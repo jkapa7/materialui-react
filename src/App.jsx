@@ -9,6 +9,9 @@ import {
   TableRow,
   TableCell,
   Button,
+  AppBar,
+  IconButton,
+  Toolbar,
 } from "@mui/material";
 import axios from "axios";
 import "./App.css";
@@ -28,29 +31,34 @@ function App() {
 
   return (
     <Container>
-      <div>
-        <a href="https://vitejs.dev">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" color="inherit" aria-label="menu" />
+          <div>
+            <a href="https://vitejs.dev">
+              <img src={viteLogo} className="logo" alt="Vite logo" />
+            </a>
+            <a href="https://react.dev">
+              <img src={reactLogo} className="logo react" alt="React logo" />
+            </a>
+          </div>
 
-      <h1>Vite + React</h1>
+          <h1>MaterialUI + React</h1>
 
-      <div className="card">
-        <Button
-          color="primary"
-          variant="contained"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </Button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+          <div className="card">
+            <Button
+              color="primary"
+              variant="contained"
+              onClick={() => setCount((count) => count + 1)}
+            >
+              count is {count}
+            </Button>
+            <p>
+              Edit <code>src/App.jsx</code> and save to test HMR
+            </p>
+          </div>
+        </Toolbar>
+      </AppBar>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
